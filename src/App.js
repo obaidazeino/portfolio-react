@@ -2,12 +2,13 @@ import React from "react"
 import './App.css';
 import Banner from "./components/Banner"
 import ContactForm from "./components/ContactForm"
-import Countries from "./components/Countries"
 import Footer from "./components/Footer"
 import Map from "./components/Map"
 import Nav from "./components/Nav"
 import Quote from "./components/Quote"
 import Section from "./components/Section"
+import writingImg from "./components/images/writing.svg"
+import graphicImg from "./components/images/trees.svg"
 
 function App() {
   return (
@@ -15,13 +16,16 @@ function App() {
       <Banner>
         <Nav />
       </Banner>
-      {/* <Map />
-      <Countries />
-      <Section text="Creative writing" img="images/writing.svg" />
-      <Quote />
-      <Section text="Graphic Design" img="images/trees.svg" />
-      <ContactForm/>
-      <Footer/> */}
+      <main>
+        
+        <Map />
+
+        <Section text="Creative writing" img={writingImg} />
+        <Quote />
+        <Section text="Graphic Design" img={graphicImg} />
+        <ContactForm />
+      </main>
+      <Footer/>
     </div>
   );
 }
