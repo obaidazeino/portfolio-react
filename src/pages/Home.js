@@ -4,40 +4,20 @@ import Banner from "../components/Banner"
 import Map from "../components/Map"
 import Quote from "../components/Quote"
 import Section from "../components/Section"
-import writingImg from "../components/images/writing.svg"
-import graphicImg from "../components/images/trees.svg"
-import Parallax from "../components/Parallax"
-import Carousel from "../components/Carousel"
-import Carousels from "../components/Carousels"
+
 import data from "../data"
 
 function Home(){
-    const carousels = data.map(item => {
-        return <Carousel key={item.id} object={item}/>
+    const sections = data.map(item => {
+        return <Section key={item.id} object={item}/>
     })
-console.log(Carousels)
 
     return (
         <div>
-            <Parallax rate="1">
-                {(para)=> (
-                <Banner data={para}/>
-                )}        
-            </Parallax>
-            
+            <Banner /> 
             <main>
-                <Parallax rate="2">
-                    {para => (
-                    <Map data={para}/>
-                    )}
-                </Parallax>
-
-                {/* <Carousels /> */}
-
-                {carousels}
-
-                {/* <Section text="Creative writing" img={writingImg} />
-                <Section text="Graphic Design" img={graphicImg} /> */}
+                <Map />
+                {sections}
                 <Quote />
             </main>
         </div>

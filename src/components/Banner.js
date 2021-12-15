@@ -1,9 +1,11 @@
 import React, {useState, useEffect} from "react"
 import logo from "./images/personal-logo.svg"
 import profile from "./images/profile.svg"
-import Parallax from "./Parallax"
+import useParallax from "./useParallax"
 
 function Banner(props) {
+    
+    console.log(useParallax(1))
     
 
     return (
@@ -12,7 +14,7 @@ function Banner(props) {
                         <div className="left-side">
                             <img className="logo" src={logo} alt=""/>
                             <hgroup 
-                            style={props.data}
+                            style={useParallax("1")[0]}
                             id="banner-text">
                                 <h2>Hi!</h2>
                                 <h3>-Graphic Designer</h3>

@@ -8,33 +8,39 @@ export default [
         id: "1",
         image: writingImg,
         title: "Creative Writing",
-        Content: [
+        content: [
             {
+                id: "1",
                 title: "poetry",
                 body: "lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlo",
                 extended: "lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum"
             },
             {
+                id: "2",
                 title: "poetry",
                 body: "lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlo",
                 extended: "lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum"
             },
             {
+                id: "3",
                 title: "poetry",
                 body: "lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlo",
                 extended: "lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum"
             },
             {
+                id: "4",
                 title: "poetry",
                 body: "lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlo",
                 extended: "lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum"
             },
             {
+                id: "5",
                 title: "poetry",
                 body: "lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlo",
                 extended: "lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum"
             },
             {
+                id: "6",
                 title: "poetry",
                 body: "lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlo",
                 extended: "lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum"
@@ -45,34 +51,40 @@ export default [
         id: "2",
         image: graphicImg,
         title: "Graphic Design",
-        Content: [
+        content: [
             {
-                image: "./",
+                id: "1",
+                image: "https://via.placeholder.com/300",
                 title: "project 1",
                 body: "lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlo"
             },
             {
-                image: "./",
+                id: "2",
+                image: "https://via.placeholder.com/300",
                 title: "project 1",
                 body: "lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlo"
             },
             {
-                image: "./",
+                id: "3",
+                image: "https://via.placeholder.com/300",
                 title: "project 1",
                 body: "lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlo"
             },
             {
-                image: "./",
+                id: "4",
+                image: "https://via.placeholder.com/300",
                 title: "project 1",
                 body: "lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlo"
             },
             {
-                image: "./",
+                id: "5",
+                image: "https://via.placeholder.com/300",
                 title: "project 1",
                 body: "lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlo"
             },
             {
-                image: "./",
+                id: "6",
+                image: "https://via.placeholder.com/300",
                 title: "project 1",
                 body: "lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlo"
             }
@@ -83,19 +95,22 @@ export default [
         id: "3",
         image: devImg,
         title: "Web Development",
-        Content: [
+        content: [
             {
-                image: "./",
+                id: "1",
+                image: "https://via.placeholder.com/300",
+                title: "web dev",
+                link: "https://obaidazeino.github.io/notes-app-deploy/"
+            },
+            {
+                id: "2",
+                image: "https://via.placeholder.com/300",
                 title: "web dev",
                 link: "/"
             },
             {
-                image: "./",
-                title: "web dev",
-                link: "/"
-            },
-            {
-                image: "./",
+                id: "3",
+                image: "https://via.placeholder.com/300",
                 title: "web dev",
                 link: "/"
             },

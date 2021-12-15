@@ -1,4 +1,5 @@
 import React from "react"
+import {Link} from "react-router-dom"
 
 function Footer() {
 
@@ -6,16 +7,16 @@ function Footer() {
         <footer>
             <div class="links">
             <ul>
-            <li><a href="#">Creative Writing</a></li>
-            <li><a href="#">Graphic Design</a></li>
-            <li><a href="#">About</a></li>
+            <li><Link to="/portfolio-react/1">Creative Writing</Link></li>
+            <li><Link to="/portfolio-react/2">Graphic Design</Link></li>
+            <li><Link to="/portfolio-react/3">Web Development</Link></li>
             </ul>
             </div>
             <div class="contact">
             <p>Contact:<br/>
                 2001 Carling Ave, Ottawa,<br/>
                 ON K2A 3W5</p>
-            <a href="tel:+15144766190">+15144766190</a>
+            <a href="tel:+15144766190">+15144766190</a><br/>
             <a href = "mailto: obaidazeino@hotmail.com">obaidazeino@hotmail.com</a>
             <p>Social:</p>
             <div class="social">

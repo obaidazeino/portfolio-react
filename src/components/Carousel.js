@@ -1,14 +1,21 @@
-import React from "react"
+import React, {useState, useEffect, useRef} from "react"
 
-import Slide from "../components/Parallax"
-import Section from "../components/Section"
+import Slide from "./Slide"
+import Section from "./Section"
 
 function Carousel(props){
-    console.log(Section)
+    // const [active, setActive] = useState(true)
+    
+
     return(
         <div className="carousel">
+            {/* <div class="arrows">
+                <span onClick={()=> setActive(true)}>-</span>
+                <span onClick={()=>setActive(false)}>-</span>
+            </div> */}
+            
             <Section text={props.object.title} img={props.object.image}/>
-            <Slide/>
+            {/* <Slide object={props.object}/>  */}
         </div>
     )
 }

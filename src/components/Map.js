@@ -1,4 +1,5 @@
 import React, {useState} from "react"
+import useParallax from "./useParallax"
 
 function Map(props) {
     let [opacity, setOpacity] = useState({opacity: "0"})
@@ -13,6 +14,7 @@ function Map(props) {
         setOpacity({opacity: "0"})
     }
 
+
     return (
         <div>
            <div className="map-section">
@@ -25,7 +27,7 @@ function Map(props) {
                         <path id="armenia" onMouseEnter={handleMouseenter} onMouseLeave={handleMouseleave} d="M167.2,212h0a41.1,41.1,0,0,1,58.1,58.1l-29.1,29-29-29A41,41,0,0,1,167.2,212Zm29,50.8A21.8,21.8,0,1,0,174.5,241,21.8,21.8,0,0,0,196.2,262.8Z" fill="#012623"/>
                         <path id="syria" onMouseEnter={handleMouseenter} onMouseLeave={handleMouseleave} d="M12,98.6h0a41.1,41.1,0,1,1,58.1,58.1l-29,29L12,156.7A41.2,41.2,0,0,1,12,98.6Zm29.1,50.7a21.7,21.7,0,1,0-21.7-21.7A21.7,21.7,0,0,0,41.1,149.3Z" fill="#012623"/></g>
                     </svg>
-                    <h3 id="places-text" style={props.data}>Places I called Home...</h3>
+                    <h3 id="places-text" style={useParallax("2")[0]}>Places I called Home...</h3>
                 </div>
             </div>
             <div className="country-container">

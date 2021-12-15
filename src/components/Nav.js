@@ -1,4 +1,5 @@
 import React, {useState} from "react"
+import {Link} from "react-router-dom"
 
 function Nav() {
     const [nav, toggleNav] = useState(false)
@@ -21,9 +22,10 @@ function Nav() {
                     <p tabIndex="0" id="arrow">-</p>
                     <nav>
                     <ul>
-                        <li><a href="#">Creative Writing</a></li>
-                        <li><a href="#">Graphic Design</a></li>
-                        <li><a href="#">About</a></li>
+                        <li><Link to="/portfolio-react">Home</Link></li>
+                        <li><Link to="/portfolio-react/1">Creative Writing</Link></li>
+                        <li><Link to="/portfolio-react/2">Graphic Design</Link></li>
+                        <li><Link to="/portfolio-react/3">Web Development</Link></li>
                     </ul>
                     </nav>
                     <div class="contactinfo">
