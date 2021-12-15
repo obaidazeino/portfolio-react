@@ -14,7 +14,6 @@ function Parallax(props) {
     
     
     return(
-        // props.render(offset) ||
         props.children(offset)
     )
 }
