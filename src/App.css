@@ -1,0 +1,664 @@
+html {
+  box-sizing: border-box;
+  font-family: verdana, sans-serif;
+  line-height: 1.5;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+:focus {
+    outline: 3px solid #30bf97;
+    outline-offset: 3px;
+}
+
+/* side navigation */
+
+.side-nav-container p:first-child {
+text-align: right;
+margin: 0;
+font-size: 3.3rem;
+transition: all .3s;
+}
+
+.side-nav-container p:first-child:hover,
+.side-nav a:hover,
+#fb:hover path, #ig:hover path, #be:hover path,
+#hamburger:hover rect {
+  color: #30bf97;
+  fill: #30bf97;
+}
+
+.side-nav {
+  position: fixed;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #012623;
+  color: #fff;
+  transition: all .5s;
+  z-index: 101;
+}
+
+.side-nav-container {
+  padding: 1.5rem;
+}
+
+.side-nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.side-nav a {
+  text-decoration: none;
+  color: #fff;
+  transition: all .3s;
+}
+
+.social svg {
+  width: 32px;
+  height: 32px;
+}
+
+#fb, #ig, #be {
+  fill: #fff;
+}
+
+#fb path, #ig path, #be path {
+  transition: all .3s;
+}
+
+.side-nav nav {
+  margin-bottom: 5rem;
+}
+
+.contact2 {
+  font-size: .7rem;
+  margin-bottom: 2rem;
+}
+
+.social {
+  display: flex;
+  justify-content: space-around;
+}
+
+.contactinfo address {
+  margin-bottom: 0;
+}
+
+.contactinfo a {
+  font-size: .8rem;
+}
+
+.contactinfo {
+  margin-bottom: 2rem;
+}
+
+/* banner */
+
+#hamburger {
+  height: 2rem;
+  width: 2rem;
+  position: fixed;
+  top: 2rem;
+  left: 2rem;
+  z-index: 100;
+  cursor: pointer;
+  transition: all .5s;
+}
+
+.logo {
+  height: 64px;
+  width: 64px;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+}
+
+#hamburger rect {
+  transition: all .3s;
+
+}
+
+.banner {
+  display: flex;
+  position: relative;
+  color: #30bf97;
+}
+
+.left-side {
+  width: 50%;
+  background-color: #207364;
+
+}
+
+.right-side {
+  width: 50%;
+}
+
+.right-side img {
+  width: 100%;
+  max-width: 500px;
+  display: block;
+}
+
+hgroup {
+  position: absolute;
+  right: 25%;
+  bottom: 40%;
+  transform: translateY(50%);
+  font-family: 'Lobster Two', cursive;
+  color: #fff;
+  font-size: 2rem;
+  line-height: 2.5rem;
+}
+
+hgroup h2, hgroup h3 {
+
+  margin: 0;
+  padding: 0;
+}
+
+
+/* map section */
+
+svg#map {
+    width: 80%;
+    height: 80%;
+}
+
+.map-section {
+  background: linear-gradient(135deg, #ffffff 1%,#ffffff 8%,#207364 8%,#207364 19%,#ffffff 19%,#ffffff 31%,#207364 31%,#207364 85%,#ffffff 85%,#ffffff 100%);
+  display: flex;
+  justify-content: center;
+}
+
+.map-container {
+    height: 100%;
+  	width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 5rem 0 1rem;
+    max-width: 1000px;
+}
+
+.map-container h3 {
+  width: 100%;
+  margin-left: 3rem;
+  font-family: 'Lobster Two', cursive;
+  font-size: 3rem;
+  color: #30bf97;
+}
+
+.country-container p {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #30bf97;
+  font-size: 4rem;
+  padding: 3rem;
+  color: #012623;
+  font-family: 'Lobster Two', cursive;
+  opacity: 0;
+  transition: all .5s;
+}
+
+.card-visible {
+  opacity: 1;
+}
+
+#syria:hover, #armenia:hover, #us:hover, #canada:hover, #mars:hover {
+  fill: #30bf97;
+}
+#syria, #armenia,
+#us,
+#canada,
+#mars {
+  transition: all .3s;
+  cursor: pointer;
+}
+
+/* writing */
+
+.pens-container img {
+  display: block;
+  width: 100%;
+  padding-bottom: 1rem;
+}
+
+.pens-container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 0;
+
+}
+
+.writing-container {
+  width: 50%;
+  padding: 5rem;
+  color: #fff;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.writing-container h3 {
+  font-size: 4rem;
+  font-family: 'Lobster Two', cursive;
+  margin-bottom: 1rem;
+}
+
+.writing-container a {
+  text-decoration: none;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 15px;
+  padding: .7rem;
+  align-self: flex-start;
+  transition: all .3s;
+}
+
+.writing-container a:hover {
+  background-color: #fff;
+  color: #207364;
+}
+
+.writing-section {
+  width: 100%;
+  background-color: #207364;
+}
+
+.writing-wrapper {
+  width: 100%;
+  max-width: 1200px;
+  display: block;
+  padding: 0;
+  margin: 0 auto;
+  display: flex;
+
+}
+
+/* slide */
+
+.slide {
+  background-color: #207364;
+  padding: 2rem;
+  width: 100%;
+  /* position: fixed; */
+}
+
+.slide-container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1000px;
+  display: block;
+  gap: 2rem;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(5, auto);
+  grid-template-areas: 
+  "first . third"
+  "first second third"
+  "fourth second sixth"
+  "fourth fifth sixth"
+  ". fifth ."
+
+}
+
+.content-card h3 {
+  font-family: 'Lobster Two', cursive;
+  font-size: 3.5rem;
+  margin: .5rem 0;
+}
+
+.content-card img {
+  width: 100%;
+}
+
+.content-card-text{
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+ 
+
+
+.content-card {
+  background-color: #30bf97;
+  margin-bottom: 1rem;
+}
+
+.content-card a {
+  background-color: #012623;
+  padding: .5rem .75rem;
+  text-decoration: none;
+  color: #30bf97;
+  align-self: center;
+  transition: all .2s;
+}
+
+.content-card a:hover {
+  color: #012623;
+  background-color: #fff;
+}
+
+.slide .content-card:first-child {
+grid-area: first;}
+
+.slide .content-card:nth-child(2){
+grid-area: second;
+
+}
+.slide .content-card:nth-child(3){
+  grid-area: third;
+}
+
+.slide .content-card:nth-child(4){
+  grid-area: fourth;
+}
+
+.slide .content-card:nth-child(5){
+  grid-area: fifth;
+}
+
+.slide .content-card:nth-child(6){
+  grid-area: sixth;
+}
+
+
+/* carousel */
+
+.carousel {
+  overflow: hidden;
+  position: relative;
+}
+
+.arrows {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.arrows span {
+  background-color: #fff;
+  border-radius: 100%;
+  height: 30px;
+  width: 30px;
+}
+
+
+
+
+
+/* quote section */
+
+.quote-section {
+  background: -webkit-linear-gradient(bottom left, #ffffff 0%, #ffffff 15%, #207364 15%, #207364 69%, #ffffff 69%, #ffffff 81%, #207364 81%, #207364 92%, #ffffff 92%, #ffffff 99%);
+  background: -o-linear-gradient(bottom left, #ffffff 0%, #ffffff 15%, #207364 15%, #207364 69%, #ffffff 69%, #ffffff 81%, #207364 81%, #207364 92%, #ffffff 92%, #ffffff 99%);
+  background: linear-gradient(to top right, #ffffff 0%, #ffffff 15%, #207364 15%, #207364 69%, #ffffff 69%, #ffffff 81%, #207364 81%, #207364 92%, #ffffff 92%, #ffffff 99%);
+  display: block;
+  overflow: hidden;
+}
+
+.quote-wrapper {
+  padding: 8rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.quote-wrapper p {
+  font-size: 3rem;
+  font-family: 'Lobster Two', cursive;
+  color: #012623;
+  margin-bottom: 1rem;
+  position: relative;
+  z-index: 3;
+}
+
+.quote-wrapper p:before {
+  content: "“";
+  position: absolute;
+  left: -6rem;
+  top: -13rem;
+  z-index: 1;
+  color: #30bf97;
+  font-size: 20rem;
+
+
+}
+
+.quote-wrapper p:after {
+  content: "A designer knows he has achieved perfection not when there is nothing left to add, but when there is nothing left to take away.";
+  position: absolute;
+  left: -7rem;
+  top: -15rem;
+  font-size: 15rem;
+  line-height: 17rem;
+  opacity: .3;
+}
+
+.quote-wrapper small {
+  text-align: right;
+  margin-left: auto;
+}
+
+/* graphic */
+
+.trees {
+  padding-bottom: 4rem;
+}
+
+/* footer */
+
+.green-line {
+  height: 3rem;
+  width: 100%;
+  background-color: #30bf97;
+  margin-bottom: 1rem;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 2rem;
+  border-bottom: 2rem solid #207364;
+}
+
+.links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+}
+
+footer a {
+  color: #000;
+  text-decoration: none;
+  transition: all .3s;
+
+}
+
+#fb-d, #ig-d, #be-d {
+  transition: all .3s;
+}
+
+footer a:hover, #fb-d:hover, #ig-d:hover, #be-d:hover {
+  color: #30bf97;
+  fill: #30bf97;
+}
+
+/* form */
+
+.form-section {
+  background-color: #207364;
+}
+
+.form-container {
+  padding-bottom: 1rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "area";
+}
+
+.form-container img {
+  width: 100%; 
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  grid-area: area;
+}
+
+form {
+  background-color: #fff;
+  padding: 2rem;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+::placeholder {
+  font-family: verdana, sans-serif;
+}
+
+form button {
+  margin-top: 1rem;
+  background-color: #207364;
+  border: none;
+  padding: .5rem .75rem;
+  color: #fff;
+}
+
+.form-text {
+  grid-area: area;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  align-self: center;
+  justify-self: center;
+}
+
+label {
+  visibility: hidden;
+}
+
+form h4 {
+  font-size: 1.5rem;
+  font-family: 'Lobster Two', cursive;
+  color: #207364;
+  margin: 0;
+}
+
+button {
+  transition: all .2s;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #30bf97;
+}
+
+/* work page */
+
+.work-page, .details-page {
+  padding: 1rem;
+  background-color: #207364;
+}
+
+.work-page h2, .details-page h2 {
+  font-family: 'Lobster Two', cursive;
+  font-size: 5rem;
+  margin: 0;
+  padding: 0;
+  text-align: right;
+  color: #fff;
+}
+
+/* details */
+
+.article {
+  margin: 0 auto;
+  padding: 1rem;
+  max-width: 800px;
+  background-color: #30bf97;
+  display: flex;
+  flex-direction: column;
+  color:#012623
+}
+
+.article h3 {
+  font-family: 'Lobster Two', cursive;
+  font-size: 3rem;
+  color: #012623
+}
+
+
+
+@media only screen and (min-width: 37em) {
+
+  hgroup {
+    right: 45%;
+    font-size: 4rem;
+    line-height: 5rem;
+  }
+
+  h2 {
+    font-size: 12rem;
+    line-height: 13rem;
+  }
+
+  .map-container h3 {
+    font-size: 6rem;
+
+  }
+
+  .logo {
+    width: 6rem;
+    height: 6rem;
+  }
+
+  .form-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .form-container img {
+    width: 50%;
+  }
+
+  form h4 {
+    font-size: 3rem;
+  }
+
+  form {
+    padding: 4rem;
+    margin-left: -7rem;
+  }
+
+  .slide-container{
+    display: grid;
+  }
+
+  footer {
+    flex-direction: row;
+  }
+
+}
+
